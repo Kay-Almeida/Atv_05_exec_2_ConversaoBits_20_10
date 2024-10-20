@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Atv_05_exec_2_ConversaoBits_20_10</string>
+    <string name="inserirNumero">Insira o número de Bits</string>
+    <string name="conversao">Escolha a conversão </string>
+    <string name="bytes">Bytes</string>
+    <string name="kb">KB</string>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="tb">TB</string>
+    <string name="btnConverte">Converter</string>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRsultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="158dp"
+        android:text="@string/btnConverte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/tvRsultado" />
+
+    <TextView
+        android:id="@+id/tvTexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/conversao"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/etBits" />
+
+    <EditText
+        android:id="@+id/etBits"
+        android:layout_width="231dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="@string/inserirNumero"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tvTexto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColorHint="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRsultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto1">
+
+        <RadioButton
+            android:id="@+id/rbBytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bytes" />
+
+        <RadioButton
+            android:id="@+id/rbKB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kb" />
+
+        <RadioButton
+            android:id="@+id/rbMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mb" />
+
+        <RadioButton
+            android:id="@+id/rbGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gb" />
+
+        <RadioButton
+            android:id="@+id/rbTB"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/tb"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
